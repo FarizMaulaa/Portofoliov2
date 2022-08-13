@@ -40,7 +40,7 @@ function Content() {
         <p>
           Fariz is Front-End Developer. He use Reactjs and Tailwind to create
           projects and he is now study in Pelita Bangsa University (Teknik
-          Infromatika)
+          Infromatika).
         </p>
         <Skill />
       </div>
