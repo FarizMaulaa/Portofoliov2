@@ -1,18 +1,22 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Cardfilm from "./Cardfilm";
+import Content from "./Content";
 import Footer from "./Footer";
-import Lotties from "./Lotties";
-import Content from "./Content1";
+import Navbar from "./Navbar";
 
 function App() {
   return (
-    <div className="dark:bg-[#2d2d2d] dark:text-white">
-      <Navbar />
-      <div className="mx-3">
-        <Lotties />
+    <div>
+      <div className="bg-[url('../src/images/bg/main.jpg')] h-[100vh] bg-no-repeat bg-fixed bg-cover">
+        <Navbar />
         <Content />
       </div>
-      <Footer />
+      <div className="bg-[url('../src/images/bg/main.jpg')] h-[220vh] bg-no-repeat bg-fixed bg-cover">
+        <Cardfilm />
+        <div className="bottom-0">
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,26 +1,29 @@
-import React from "react";
-import Darkmode from "./DarkMode";
-
+import "./style/Style.css";
+import { GiFilmProjector } from "react-icons/gi";
+import Dropbar from "./Dropbar";
 function navbar() {
   return (
     <div className="relative">
-      <ul className="p-0 m-0 overflow-hidden fixed z-10 top-0 left-0 right-0 bg-[#353535] shadow-lg shadow-indigo-500/40 flex justify-between items-center text-center  text-white">
-        <li className="font-normal text-xl flex ml-2">Fariz Maulana</li>
-        <li className="flex">
-          <a
-            href="#"
-            className="block text-white text-center px-5 py-5 no-underline text-base mr-[-25px]"
+      <div className="bg-[#353535] p-0 m-0 left-0 right-0 top-0 overflow-hidden text-white">
+        <div className="p-1 m-2 flex justify-between items-center text-center ">
+          <h1
+            className="font-normal text-xl flex ml-2"
+            Animated
+            animationIn="bounceInLeft"
           >
-            About
-          </a>
-          <a
-            href="#"
-            className="block text-white text-center px-5 py-5 no-underline text-base"
-          >
-            <Darkmode />
-          </a>
-        </li>
-      </ul>
+            <div className="icon text-red-600">
+              <GiFilmProjector />
+            </div>
+            BIOZKOP21
+          </h1>
+          <div className="flex justify-between text-center">
+            <h1 className="m-2">kategori</h1>
+            <h1 className="bg-red-600 hover:bg-red-500 p-2 text-center items-center text-white rounded">
+              Tonton
+            </h1>
+          </div>
+        </div>s
+      </div>
     </div>
   );
 }
